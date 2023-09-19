@@ -1,5 +1,7 @@
 html, body {
     background: #ECFDF5;
+    display: flex;
+    justify-content: center;
     
 }
 #to-center {
