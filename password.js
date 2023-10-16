@@ -1,6 +1,6 @@
 let passwordArr = ["A","B","C","D","E","f","h","i","j","k","1","2","+","-","&","w","z","<","*","$"]
 let passwordLength
-let inputEl = document.getElementById("style")
+let inputEl = document.getElementById("password-length-input")
 let input1El = document.querySelector("#password1-col")
 let input2El = document.querySelector("#password2-col")
 let input3El = document.querySelector("#password3-col")

@@ -5,16 +5,52 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </head>
     <body>
-        <div id="to-center">
+        <div class="container" id="to-center">
             <h1>Generate a <br><div style="color: #10B981;;">random number</div></h1>
             <h3>Never use an insecure password again</h3>
             <button onclick="generatePassword()">Generate Passwords</button>
-            <p>Lenght: <input type ="text" id="style" value=""></input></p>
+            <div class="length-container">
+                <label for="password-length-input" class="length-label">Lenght: </label>
+                <input 
+                    class="password-length-input"
+                    type ="text" 
+                    id="password-length-input" 
+                    value=""
+                    placeholder="Enter length"
+                />
+            </div>
             <hr></hr>
-            <input type = "text" id="password1-col" value="..."></input>
-            <input type = "text" id="password2-col" value="..."></input>
-            <input type = "text" id="password3-col" value="..."></input>
-            <input type = "text" id="password4-col" value="..."></input>
+            <div class="display-password-container">
+                <input 
+                    class="show-password-input"
+                    type="text" 
+                    id="password1-col" 
+                    value="..." 
+                    arial-label="password1"
+                />
+                <input 
+                    class="show-password-input"
+                    type="text" 
+                    id="password2-col" 
+                    value="..."
+                    arial-label="password2"
+                />
+                <input
+                    class="show-password-input" 
+                    type="text" 
+                    id="password3-col" 
+                    value="..."
+                    arial-label="password3"
+                />
+                <input
+                    class="show-password-input" 
+                    type="text" 
+                    id="password4-col" 
+                    value="..."
+                    arial-label="password4"
+                />
+            </div>
+            
         </div>
     <script src="password.js"></script>
     </body>

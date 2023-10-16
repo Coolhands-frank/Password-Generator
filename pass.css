@@ -1,23 +1,16 @@
 html, body {
-    background: #ECFDF5;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: auto ;
     
 }
-#to-center {
-    width: 500px;
-    margin: auto;
-    height: 500px;
+.container {
+    max-width: 500px;
     background: #1F2937;
-    padding-left: 40px;
-    border-radius: 8px;
+    padding: 50px 40px;
 }
 
 h1 {
     margin: 0;
-    width: 354px;
-    padding-top: 30px;
     font-family: 'Karla';
     font-style: normal;
     font-weight: 800;
@@ -58,39 +51,49 @@ button {
 } 
 
 hr {
-    width: 446px;
-    height: 0px;
-    left: 0;
     margin-top: 35px;
-    margin-left: 0;
-    margin-bottom: 0;
+
     border: 1px solid #2F3E53;
 }
 
-input {    
-    width: 211px;
-    height: 39px;
-    text-align: center;
-    background: #273549;
-    border-radius: 6px;
-    border: none;
-    margin-right: 18px;
-    margin-top: 35px;
-}
-
-#style {
+.password-length-input {
     margin: 0px;
-    width: 90px;
-    height: 20px;
     background: white;
+    border-radius: 6px;
+    width: 30%;
+    padding: 5px;
+    border: none;
 }
 
-p {
-    margin-top: 11px;
+.length-container {
+    margin-top: 10px;
+}
+.password-length-input:focus {
+    outline: none;
+}
+
+.length-label {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
     color: #D5D4D8;
+}
+
+.display-password-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.show-password-input { 
+    padding: 10px;   
+    text-align: center;
+    background: #273549;
+    border-radius: 6px;
+    border: none;
+    width: 48%;
+    margin-top: 35px;
 }
